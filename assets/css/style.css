@@ -14,15 +14,19 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: white;
 }
 
 .container {
-    width: 800px;
+    width: 500px;
     max-width: 80%;
     background-color: white;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .btn-grid {
@@ -46,18 +50,69 @@ body {
     background-color: rgb(185, 159, 209);
 }
 
+/* .btn.correct {
+    background-color: green;
+}
+
+.btn.wrong {
+    background-color: red;
+} */
+
 .start-btn {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
+    cursor: pointer;
+}
+
+.next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
 .controls {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .hide {
     display: none;
 }
+
+.high-score {
+    font-size: .50cm;
+    border: none;
+    background-color: transparent;
+    padding: 20px;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+#countdown {
+    font-size: .50cm;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    position: absolute;
+    top: 5px;
+    right: 30px;
+}
+
+/* div .p-style {
+    font-size: .60cm;
+    padding: 0px 50px;
+    text-align: justify;
+
+}
+
+div .p-style-1 {
+    font-size: .50cm;
+    font: 2px;
+    padding-block: 10px;
+
+} */

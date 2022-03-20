@@ -9,23 +9,82 @@
     <script defer src="assets/js/script.js"></script>
     <title>Quiz App!</title>
 </head>
+<header class="header-title" id="header">
+    <div class="veiw-high-scores-button">
+        <div class="style-indiv">
+            <button class="view-high-scores high-score" id="view-scores" type="button"> View High Scores</button>
+        </div>
+        <div class="style-indiv">
+            <p id="countdown">Time:</p>
+        </div>
+    </div>
+</header>
 
 <body>
     <div class="container">
         <div id="question-container" class="hide">
-            <div id="question">Questions</div>
+            <div id="question">Question</div>
             <div id="answer-buttons" class="btn-grid">
                 <button class="btn">Answer 1</button>
                 <button class="btn">Answer 2</button>
                 <button class="btn">Answer 3</button>
                 <button class="btn">Answer 4</button>
             </div>
+            <div id="right-wrong" class="font-weight-light font-italic">
+                <hr> <!-- RUSULTS WILL ADDED HERE VIA JS ONCE RAN -->
+            </div>
         </div>
-        <div class="controls"></div>
-        <button id="start-btn" class="start-btn btn">Start</button>
-        <button id="next-btn" class="next-btn btn hide">Next</button>
-    </div>
+        <div class="controls">
+            <h1>Coding Quiz Challenge</h1>
+            <p class="p-style" id="question-li">
+                Try to answer the following code-related questions within the time limit. keep in mind that incorrect
+                answers will penalize your score/time by ten seconds!
+            </p>
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
     </div>
 </body>
 
 </html>
+
+<!-- <body>
+    <header class="header-title" id="header">
+        <div class="veiw-high-scores-button">
+            <div class="style-indiv">
+                <button class="view-high-scores high-score" id="view-scores" type="button"> View High Scores</button>
+            </div>
+            <div class="style-indiv">
+                <p class="timer">Time: 60</p>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="quiz">
+            <h1>Coding Quiz Challenge</h1>
+        </div>
+        <div class="main-display" id="question-answer">
+            <p class="p-style" id="question-li">
+                Try to answer the following code-related questions within the time limit. keep in mind that incorrect
+                answers will penalize your score/time by ten seconds!
+            </p>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+        </div>
+    </div>
+</body>
+<div id="question-container" class="hide">
+    <div id="question">Questions</div>
+    <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+    </div>
+</div>
+</div>
+
+</body>
+
+</html> -->
