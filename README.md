@@ -23,7 +23,7 @@ SO THAT I can gauge my progress compared to my peers
 
 
 ## Deployable link 
-https://nicolesharrock.github.io/horiseon/
+https://nicolesharrock.github.io/code-quiz/
 
 ## screenshot 
 ![screenshot](/assets/images/quiz.png)
