@@ -8,20 +8,6 @@ let time = startingMinutes * 60;
 const countdownEl = document.getElementById("countdown");
 let shuffledQuestions, currentQuestionIndex
 
-setInterval(updateCountdown, 1000);
-function updateCountdown() {
-    const minutes = Math.floor(time / 60);
-    let seconds = time % 60;
-
-    seconds = seconds < 10 ? "0" + seconds : seconds;
-
-    countdownEl.innerHTML = `${minutes}: ${seconds}`;
-    time--;
-    if (time <= 0 || time < 1) {
-        clearInterval(startingMinutes)
-    }
-}
-
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
@@ -34,6 +20,21 @@ function startGame() {
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
     setNextQuestion()
+
+
+    setInterval(updateCountdown, 1000);
+    function updateCountdown() {
+        const minutes = Math.floor(time / 60);
+        let seconds = time % 60;
+
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        countdownEl.innerHTML = `${minutes}: ${seconds}`;
+        time--;
+        if (time <= 0 || time < 1) {
+            clearInterval(startingMinutes)
+        }
+    }
 }
 
 function setNextQuestion() {
